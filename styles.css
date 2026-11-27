@@ -49,3 +49,18 @@ strong {
     color: #666;
     font-style: italic;
 }
+
+main { box-sizing: border-box; }
+
+@media (max-width: 600px) {
+    main { margin-top: 0; padding: 20px; border-left: 0; border-right: 0; }
+    h1 { font-size: 2em; }
+}
+
+@media (prefers-color-scheme: dark) {
+    body { background-color: #111; color: #ddd; }
+    main { background-color: #1a1a1a; border-color: #333; }
+    h1 { border-bottom-color: #ddd; }
+    a { color: #7aa7ff; }
+    #visitor-count { color: #999; }
+}
